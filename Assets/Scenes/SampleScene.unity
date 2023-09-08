@@ -230,7 +230,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Test_UI: {fileID: 739233331}
   targetPos: {x: 0, y: 113.9, z: 0}
-  duration: 3
+  originalPos: {x: 0, y: -821, z: 0}
+  duration: 1
+  targetSize: {x: 0.5, y: 0.5, z: 0.5}
+  fadeDuration: 0.258
+  targetImage: {fileID: 21105567}
 --- !u!4 &23366364
 Transform:
   m_ObjectHideFlags: 0
@@ -671,7 +675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -345}
+  m_AnchoredPosition: {x: 0, y: -821}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &766220327
@@ -938,7 +942,6 @@ GameObject:
   - component: {fileID: 1377425986}
   - component: {fileID: 1377425985}
   - component: {fileID: 1377425984}
-  - component: {fileID: 1377425988}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1030,21 +1033,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1377425988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377425983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d907978e217781942a3c48b85d6f6bbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Test_UI: {fileID: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  duration: 0
 --- !u!1 &1545709188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1120,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 23366363}
         m_TargetAssemblyTypeName: Button_Manager, Assembly-CSharp
-        m_MethodName: ButtonMovement
+        m_MethodName: SequenceTween
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
