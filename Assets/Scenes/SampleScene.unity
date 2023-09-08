@@ -232,9 +232,11 @@ MonoBehaviour:
   targetPos: {x: 0, y: 113.9, z: 0}
   originalPos: {x: 0, y: -821, z: 0}
   duration: 1
-  targetSize: {x: 0.5, y: 0.5, z: 0.5}
-  fadeDuration: 0.258
+  targetSize: {x: 0.2, y: 0.2, z: 0.2}
+  rotation: {x: 0, y: 0, z: 120}
+  fadeDuration: 0.294
   targetImage: {fileID: 21105567}
+  delay: 2.22
 --- !u!4 &23366364
 Transform:
   m_ObjectHideFlags: 0
@@ -1120,7 +1122,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 23366363}
         m_TargetAssemblyTypeName: Button_Manager, Assembly-CSharp
-        m_MethodName: SequenceTween
+        m_MethodName: RotationTween
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
