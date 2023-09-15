@@ -278,7 +278,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &330585545
 Camera:
   m_ObjectHideFlags: 0
@@ -1122,7 +1122,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 23366363}
         m_TargetAssemblyTypeName: Button_Manager, Assembly-CSharp
-        m_MethodName: RotationTween
+        m_MethodName: SequenceTween
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
